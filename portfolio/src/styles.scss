@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background-color: #FFFFFF;
+  background-color: $white;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -10,25 +10,47 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000080;
+  background: $gradient;
     p {
-      color: #FFFFFF;
+      color: $white;
       font-size: 2rem;
       font-weight: bold;
-      margin-left: 24px;
+      margin-left: 48px;
     }
     button {
-      margin-right: 24px;
-      background-color: #FFFFFF; 
-      border: none;
-      color: #000000;
+      margin-right: 48px;
+      background-color: transparent; 
+      border: 2px solid white;
+      color: $white;
       padding: 15px 32px;
       text-align: center;
       font-size: 1rem;
       border-radius: 10px;
         &:hover {
-          background-color: #C0C0C0;
+          border: 2px solid $black;
+          color: $black;
           cursor: pointer;
+        }
+    }
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 48px;
+    img {
+      width: 30%;
+      height: auto;
+      border-radius: 100%;
+    }
+    .headerContainer {
+      margin-left: 120px;
+        h1 {
+          font-size: 48px;
+        }
+        p {
+          font-size: 24px;
         }
     }
 }
