@@ -5,8 +5,8 @@ import '../styles.scss';
 const NavBar = () => {
     return(
         <div className='navBarDiv'>
-        <p>Ty Lippe</p>
-        <Contact />
+            <p>Ty Lippe</p>
+            <Contact />
         </div>
     )
 }
