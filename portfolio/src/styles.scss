@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background-color: #FFFFFF;
+  background-color: $white;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -10,25 +10,173 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000080;
+  background: $gradient;
     p {
-      color: #FFFFFF;
-      font-size: 2rem;
+      color: $white;
+      font-size: 36px;
       font-weight: bold;
-      margin-left: 24px;
+      margin-left: 48px;
     }
     button {
-      margin-right: 24px;
-      background-color: #FFFFFF; 
-      border: none;
-      color: #000000;
+      margin-right: 48px;
+      background-color: transparent; 
+      border: 2px solid $white;
+      color: $white;
       padding: 15px 32px;
       text-align: center;
       font-size: 1rem;
       border-radius: 10px;
         &:hover {
-          background-color: #C0C0C0;
+          border: 2px solid $black;
+          color: $black;
           cursor: pointer;
         }
     }
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 94px 48px;
+    img {
+      width: 30%;
+      height: auto;
+      border-radius: 100%;
+      box-shadow: 8px 8px 6px $black;
+    }
+    .headerContainer {
+      margin-left: 180px;
+        h1 {
+          font-size: 48px;
+        }
+        p {
+          font-size: 24px;
+        }
+    }
+    .darkButton {
+      margin-right: 48px;
+      background: $gradient; 
+      border: none;
+      color: $black;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 10px;
+        &:hover {
+          border: none;
+          color: $white;
+          cursor: pointer;
+        }
+    }
+    .lightButton {
+      margin-right: 48px;
+      background: $gradient; 
+      border: none;
+      color: $white;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 10px;
+        &:hover {
+          border: none;
+          color: $black;
+          cursor: pointer;
+        }
+    }
+}
+
+.bodyDiv {
+  padding: 12px 24px;
+  text-align: center;
+  background: $gradient;
+  color: $white;
+  font-size: 30px;
+    h2 {
+      margin: 12px;
+    }
+}
+
+.projectContainer {
+  position: relative;
+    .projectImg {
+      width: 1080px;
+      height: 600px;
+      box-shadow: 8px 8px 6px $black;
+    }
+    .projectButton {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+      background: $gradient;
+      border: 2px solid $white;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 10px;
+      color: $white;
+          &:hover {
+          color: $black;
+          border: 2px solid $black;
+          opacity: 1;
+          cursor: pointer;
+        }
+    }
+}
+
+.imageHolder:hover .projectImg {
+  opacity: 0.3;
+}
+
+.imageHolder:hover .projectButton {
+  opacity: 1;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  padding: 12px;
+  background: $gradient;
+    .socialButton {
+      margin: 12px;
+      border: 2px solid $white;
+      padding: 10px;
+      border-radius: 100%;
+      color: $black;
+      background-color: transparent;
+        &:hover {
+          cursor: pointer;
+          border: 2px solid $black;
+          color: $white;
+          background-color: black;
+        }
+    }
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    a {
+      text-decoration: none;
+      color: $white;
+        &:hover {
+          color: $black;
+        }
+    }
+    p {
+      color: $white;
+    }
+}
+
+.dark-mode {
+  color: $white;
+  background-color: $dark;
 }
