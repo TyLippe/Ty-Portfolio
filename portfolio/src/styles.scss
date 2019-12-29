@@ -43,6 +43,7 @@ body {
       width: 30%;
       height: auto;
       border-radius: 100%;
+      box-shadow: 3px 8px 6px 8px #888888;
     }
     .headerContainer {
       margin-left: 120px;
@@ -53,4 +54,11 @@ body {
           font-size: 24px;
         }
     }
+}
+
+.bodyDiv {
+  border: 1px red solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

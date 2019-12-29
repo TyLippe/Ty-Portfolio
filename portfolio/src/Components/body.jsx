@@ -3,10 +3,9 @@ import Projects from './project';
 
 const Body = () => {
     return(
-        <>
-        <p>Body</p>
+        <div className='bodyDiv'>
         <Projects />
-        </>
+        </div>
     )
 }
 export default Body;
