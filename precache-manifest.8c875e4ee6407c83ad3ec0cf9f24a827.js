@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8fe2c066f6765a2302478dfc63112260",
+    "revision": "f0d0ebac8c953463234affe56b865d51",
     "url": "/Ty-Portfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Ty-Portfolio/static/css/2.9d04c5f8.chunk.css"
   },
   {
-    "revision": "141947631ee36f8b008c",
+    "revision": "233868cb82bfec43c3dc",
     "url": "/Ty-Portfolio/static/css/main.f62662fa.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Ty-Portfolio/static/js/2.d50df953.chunk.js.LICENSE"
   },
   {
-    "revision": "141947631ee36f8b008c",
-    "url": "/Ty-Portfolio/static/js/main.8e108217.chunk.js"
+    "revision": "233868cb82bfec43c3dc",
+    "url": "/Ty-Portfolio/static/js/main.2f3d82c1.chunk.js"
   },
   {
     "revision": "20713a2b5ffe985b066b",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Ty-Portfolio/static/media/Kansha.352e0986.PNG"
   },
   {
-    "revision": "1b8d429d7a73d779fa909e93ccdfc379",
-    "url": "/Ty-Portfolio/static/media/Resume.1b8d429d.pdf"
+    "revision": "541fd95c9d51c02d4a69a6cd25a1e5ae",
+    "url": "/Ty-Portfolio/static/media/Resume.541fd95c.pdf"
   },
   {
     "revision": "a1e5038730ee3e6595de040df8e89289",
