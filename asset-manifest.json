@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Ty-Portfolio/static/css/main.f62662fa.chunk.css",
+    "main.css": "/Ty-Portfolio/static/css/main.265b1059.chunk.css",
     "main.js": "/Ty-Portfolio/static/js/main.2f3d82c1.chunk.js",
     "main.js.map": "/Ty-Portfolio/static/js/main.2f3d82c1.chunk.js.map",
     "runtime-main.js": "/Ty-Portfolio/static/js/runtime-main.2d3fd461.js",
@@ -9,10 +9,10 @@
     "static/js/2.d50df953.chunk.js": "/Ty-Portfolio/static/js/2.d50df953.chunk.js",
     "static/js/2.d50df953.chunk.js.map": "/Ty-Portfolio/static/js/2.d50df953.chunk.js.map",
     "index.html": "/Ty-Portfolio/index.html",
-    "precache-manifest.8c875e4ee6407c83ad3ec0cf9f24a827.js": "/Ty-Portfolio/precache-manifest.8c875e4ee6407c83ad3ec0cf9f24a827.js",
+    "precache-manifest.6ed3a8e7e4347b981e83df06e240adff.js": "/Ty-Portfolio/precache-manifest.6ed3a8e7e4347b981e83df06e240adff.js",
     "service-worker.js": "/Ty-Portfolio/service-worker.js",
     "static/css/2.9d04c5f8.chunk.css.map": "/Ty-Portfolio/static/css/2.9d04c5f8.chunk.css.map",
-    "static/css/main.f62662fa.chunk.css.map": "/Ty-Portfolio/static/css/main.f62662fa.chunk.css.map",
+    "static/css/main.265b1059.chunk.css.map": "/Ty-Portfolio/static/css/main.265b1059.chunk.css.map",
     "static/js/2.d50df953.chunk.js.LICENSE": "/Ty-Portfolio/static/js/2.d50df953.chunk.js.LICENSE",
     "static/media/Kansha.PNG": "/Ty-Portfolio/static/media/Kansha.352e0986.PNG",
     "static/media/Resume.pdf": "/Ty-Portfolio/static/media/Resume.541fd95c.pdf",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.2d3fd461.js",
     "static/css/2.9d04c5f8.chunk.css",
     "static/js/2.d50df953.chunk.js",
-    "static/css/main.f62662fa.chunk.css",
+    "static/css/main.265b1059.chunk.css",
     "static/js/main.2f3d82c1.chunk.js"
   ]
 }
