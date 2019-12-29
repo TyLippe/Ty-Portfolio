@@ -46,12 +46,42 @@ body {
       box-shadow: 8px 8px 6px $black;
     }
     .headerContainer {
-      margin-left: 120px;
+      margin-left: 180px;
         h1 {
           font-size: 48px;
         }
         p {
           font-size: 24px;
+        }
+    }
+    .darkButton {
+      margin-right: 48px;
+      background: $gradient; 
+      border: none;
+      color: $black;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 10px;
+        &:hover {
+          border: none;
+          color: $white;
+          cursor: pointer;
+        }
+    }
+    .lightButton {
+      margin-right: 48px;
+      background: $gradient; 
+      border: none;
+      color: $white;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 10px;
+        &:hover {
+          border: none;
+          color: $black;
+          cursor: pointer;
         }
     }
 }
@@ -89,21 +119,64 @@ body {
       text-align: center;
       font-size: 1rem;
       border-radius: 10px;
-        a {
-          text-decoration: none;
-          color: $white;
-        }
+      color: $white;
           &:hover {
+          color: $black;
+          border: 2px solid $black;
           opacity: 1;
           cursor: pointer;
         }
     }
 }
 
-.projectContainer:hover .projectImg {
+.imageHolder:hover .projectImg {
   opacity: 0.3;
 }
 
-.projectContainer:hover .projectButton {
+.imageHolder:hover .projectButton {
   opacity: 1;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  padding: 12px;
+  background: $gradient;
+    .socialButton {
+      margin: 12px;
+      border: 2px solid $white;
+      padding: 10px;
+      border-radius: 100%;
+      color: $black;
+      background-color: transparent;
+        &:hover {
+          cursor: pointer;
+          border: 2px solid $black;
+          color: $white;
+          background-color: black;
+        }
+    }
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    a {
+      text-decoration: none;
+      color: $white;
+        &:hover {
+          color: $black;
+        }
+    }
+    p {
+      color: $white;
+    }
+}
+
+.dark-mode {
+  color: $white;
+  background-color: $dark;
 }
