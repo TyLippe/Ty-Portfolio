@@ -2,8 +2,9 @@
 
 body {
   margin: 0;
-  background-color: $white;
+  background-color: $dark;
   font-family: 'Roboto', sans-serif;
+  color: $white;
 }
 
   //LARGE
@@ -13,9 +14,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: $gradient;
+    background-color: $dark;
       p {
-        color: $white;
         font-size: 36px;
         font-weight: bold;
         margin-left: 48px;
@@ -23,15 +23,15 @@ body {
       button {
         margin-right: 48px;
         background-color: transparent; 
-        border: 2px solid $white;
+        border: none;
         color: $white;
         padding: 15px 32px;
         text-align: center;
-        font-size: 1rem;
+        font-size: 36px;
+        font-weight: bold;
         border-radius: 10px;
           &:hover {
-            border: 2px solid $black;
-            color: $black;
+            color: $blue;
             cursor: pointer;
           }
         }
@@ -44,9 +44,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: $gradient;
+    background-color: $dark;
       p {
-        color: $white;
         font-size: 36px;
         font-weight: bold;
         margin-left: 48px;
@@ -54,15 +53,15 @@ body {
       button {
         margin-right: 48px;
         background-color: transparent; 
-        border: 2px solid $white;
+        border: none;
         color: $white;
         padding: 15px 32px;
         text-align: center;
-        font-size: 1rem;
+        font-size: 36px;
+        font-weight: bold;
         border-radius: 10px;
           &:hover {
-            border: 2px solid $black;
-            color: $black;
+            color: $blue;
             cursor: pointer;
           }
         }
@@ -74,10 +73,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: $gradient;
+    background-color: $dark;
     padding: 10px;
       p {
-        color: $white;
         font-size: 36px;
         font-weight: bold;
         margin: 24px;
@@ -85,15 +83,15 @@ body {
       button {
         margin: 0;
         background-color: transparent; 
-        border: 2px solid $white;
+        border: none;
         color: $white;
         padding: 15px 32px;
         text-align: center;
-        font-size: 1rem;
+        font-size: 36px;
+        font-weight: bold;
         border-radius: 10px;
           &:hover {
-            border: 2px solid $black;
-            color: $black;
+            color: $blue;
             cursor: pointer;
           }
         }
@@ -104,55 +102,27 @@ body {
   @media screen and (min-width: $break-large) {
   .headerDiv {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 94px 48px;
       img {
-        width: 50%;
+        width: 20%;
         height: auto;
         border-radius: 100%;
-        box-shadow: 8px 8px 6px $black;
-
       }
       .headerContainer {
-        margin-left: 180px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 80px;
           h1 {
-            font-size: 48px;
+            margin: 0;
+            font-size: 80px;
           }
-          p {
-            font-size: 24px;
+          h2 {
+            margin-top: 10px;
+            font-size: 32px;
           }
-      }
-      .darkButton {
-        margin-right: 48px;
-        background: $gradient; 
-        border: none;
-        color: $black;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 1rem;
-        border-radius: 10px;
-          &:hover {
-            border: none;
-            color: $white;
-            cursor: pointer;
-          }
-      }
-      .lightButton {
-        margin-right: 48px;
-        background: $gradient; 
-        border: none;
-        color: $white;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 1rem;
-        border-radius: 10px;
-          &:hover {
-            border: none;
-            color: $black;
-            cursor: pointer;
-        }
       }
     }
   }
@@ -168,7 +138,6 @@ body {
         width: 60%;
         height: auto;
         border-radius: 100%;
-        box-shadow: none;
       }
       .headerContainer {
         margin: 0;
@@ -179,36 +148,6 @@ body {
           p {
             font-size: 24px;
           }
-      }
-      .darkButton {
-        margin-right: 48px;
-        background: $gradient; 
-        border: none;
-        color: $black;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 1rem;
-        border-radius: 10px;
-          &:hover {
-            border: none;
-            color: $white;
-            cursor: pointer;
-          }
-      }
-      .lightButton {
-        margin-right: 48px;
-        background: $gradient; 
-        border: none;
-        color: $white;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 1rem;
-        border-radius: 10px;
-          &:hover {
-            border: none;
-            color: $black;
-            cursor: pointer;
-        }
       }
     }
   }
@@ -224,7 +163,6 @@ body {
         width: 80%;
         height: auto;
         border-radius: 100%;
-        box-shadow: none;
       }
       .headerContainer {
         margin: 0;
@@ -236,36 +174,6 @@ body {
             font-size: 24px;
           }
       }
-      .darkButton {
-        margin: 0;
-        background: $gradient; 
-        border: none;
-        color: $black;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 1rem;
-        border-radius: 10px;
-          &:hover {
-            border: none;
-            color: $black;
-            cursor: pointer;
-          }
-      }
-      .lightButton {
-        margin: 0;
-        background: $gradient; 
-        border: none;
-        color: $white;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 1rem;
-        border-radius: 10px;
-          &:hover {
-            border: none;
-            color: $white;
-            cursor: pointer;
-        }
-      }
     }
   }
 
@@ -274,7 +182,7 @@ body {
   .bodyDiv {
     padding: 12px 24px;
     text-align: center;
-    background: $gradient;
+    background-color: $blue;
     color: $white;
     font-size: 30px;
       h2 {
@@ -287,7 +195,6 @@ body {
       .projectImg {
         width: 1080px;
         height: 600px;
-        box-shadow: 8px 8px 6px $black;
       }
       .projectButton {
         transition: .5s ease;
@@ -298,7 +205,7 @@ body {
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         text-align: center;
-        background: $gradient;
+        background-color: $blue;
         border: 2px solid $white;
         padding: 15px 32px;
         text-align: center;
@@ -327,7 +234,7 @@ body {
   .bodyDiv {
     padding: 12px 24px;
     text-align: center;
-    background: $gradient;
+    background-color: $blue;
     color: $white;
     font-size: 30px;
       h2 {
@@ -340,7 +247,6 @@ body {
       .projectImg {
         width: 80%;
         height: auto;
-        box-shadow: none;
       }
       .projectButton {
         transition: .5s ease;
@@ -351,7 +257,7 @@ body {
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         text-align: center;
-        background: $gradient;
+        background-color: $blue;
         border: 2px solid $white;
         padding: 15px 32px;
         text-align: center;
@@ -380,7 +286,7 @@ body {
   .bodyDiv {
     padding: 12px 24px;
     text-align: center;
-    background: $gradient;
+    background-color: $blue;
     color: $white;
     font-size: 30px;
       h2 {
@@ -393,7 +299,6 @@ body {
       .projectImg {
         width: 300px;
         height: 180px;
-        box-shadow: none;
         border-radius: 10px;
       }
       .projectButton {
@@ -405,7 +310,7 @@ body {
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         text-align: center;
-        background: $gradient;
+        background-color: $blue;
         border: 2px solid $white;
         padding: 6px 20px;
         text-align: center;
@@ -436,18 +341,18 @@ body {
   align-items: center;
   margin-top: 60px;
   padding: 12px;
-  background: $gradient;
+  background-color: $blue;
     .socialButton {
       margin: 12px;
       border: 2px solid $white;
       padding: 10px;
       border-radius: 100%;
-      color: $black;
+      color: $white;
       background-color: transparent;
         &:hover {
           cursor: pointer;
           border: 2px solid $black;
-          color: $white;
+          color: $blue;
           background-color: black;
         }
     }
@@ -457,19 +362,4 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-    a {
-      text-decoration: none;
-      color: $white;
-        &:hover {
-          color: $black;
-        }
-    }
-    p {
-      color: $white;
-    }
-}
-
-.dark-mode {
-  color: $white;
-  background-color: $dark;
 }

@@ -18,10 +18,6 @@ const Footer = () => {
 
     return(
         <div className='footerContainer'>
-        <div className='footerInfo'>
-            <p>Ty Lippe</p>
-            <a href='mailto:tylippe94@gmail.com?Subject=Portfolio'>tylippe94@gmail.com</a>
-        </div>
         <div className='footerDiv'>
             <button className='socialButton' onClick={TwitterLink}>
                 <TwitterIcon /> 
