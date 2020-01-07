@@ -7,7 +7,6 @@ import Kansha from '../Images/Kansha.PNG';
 
 const Projects = () => {
     const settings =  {
-        arrows: false,
         dots: true,
         duration: 100,
         shift: 30,
@@ -33,6 +32,7 @@ const Projects = () => {
 
     return(
         <div className='projectDiv'>
+            <h1>Portfolio</h1>
             <Slider {...settings}>
             <div className='projectContainer'>
                 <h3>Water My Plants</h3>

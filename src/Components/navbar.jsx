@@ -1,12 +1,12 @@
 import React from 'react'
-import Resume from './resume';
+import Contact from './contact';
 import '../styles.scss';
 
 const NavBar = () => {
     return(
         <div className='navBarDiv'>
             <p>Ty Lippe</p>
-            <Resume />
+            <Contact />
         </div>
     )
 }

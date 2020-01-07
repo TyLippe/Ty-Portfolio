@@ -14,7 +14,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: $blue;
+    background-color: $dark;
       p {
         font-size: 36px;
         font-weight: bold;
@@ -23,15 +23,15 @@ body {
       button {
         margin-right: 48px;
         background-color: transparent; 
-        border: 2px solid $white;
+        border: none;
         color: $white;
         padding: 15px 32px;
         text-align: center;
-        font-size: 1rem;
+        font-size: 36px;
+        font-weight: bold;
         border-radius: 10px;
           &:hover {
-            border: 2px solid $black;
-            color: $black;
+            color: $blue;
             cursor: pointer;
           }
         }
@@ -44,7 +44,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: $blue;
+    background-color: $dark;
       p {
         font-size: 36px;
         font-weight: bold;
@@ -53,15 +53,15 @@ body {
       button {
         margin-right: 48px;
         background-color: transparent; 
-        border: 2px solid $white;
+        border: none;
         color: $white;
         padding: 15px 32px;
         text-align: center;
-        font-size: 1rem;
+        font-size: 36px;
+        font-weight: bold;
         border-radius: 10px;
           &:hover {
-            border: 2px solid $black;
-            color: $black;
+            color: $blue;
             cursor: pointer;
           }
         }
@@ -73,7 +73,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $blue;
+    background-color: $dark;
     padding: 10px;
       p {
         font-size: 36px;
@@ -83,15 +83,15 @@ body {
       button {
         margin: 0;
         background-color: transparent; 
-        border: 2px solid $white;
+        border: none;
         color: $white;
         padding: 15px 32px;
         text-align: center;
-        font-size: 1rem;
+        font-size: 36px;
+        font-weight: bold;
         border-radius: 10px;
           &:hover {
-            border: 2px solid $black;
-            color: $black;
+            color: $blue;
             cursor: pointer;
           }
         }
@@ -102,24 +102,26 @@ body {
   @media screen and (min-width: $break-large) {
   .headerDiv {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 94px 48px;
       img {
-        width: 50%;
+        width: 20%;
         height: auto;
         border-radius: 100%;
-        box-shadow: 8px 8px 6px $black;
-
       }
       .headerContainer {
-        margin-left: 180px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 80px;
           h1 {
-            font-size: 48px;
+            margin: 0;
+            font-size: 80px;
           }
-          p {
-            font-size: 24px;
+          h2 {
+            margin-top: 10px;
+            font-size: 32px;
           }
       }
     }
@@ -136,7 +138,6 @@ body {
         width: 60%;
         height: auto;
         border-radius: 100%;
-        box-shadow: none;
       }
       .headerContainer {
         margin: 0;
@@ -162,7 +163,6 @@ body {
         width: 80%;
         height: auto;
         border-radius: 100%;
-        box-shadow: none;
       }
       .headerContainer {
         margin: 0;
@@ -195,7 +195,6 @@ body {
       .projectImg {
         width: 1080px;
         height: 600px;
-        box-shadow: 8px 8px 6px $black;
       }
       .projectButton {
         transition: .5s ease;
@@ -248,7 +247,6 @@ body {
       .projectImg {
         width: 80%;
         height: auto;
-        box-shadow: none;
       }
       .projectButton {
         transition: .5s ease;
@@ -301,7 +299,6 @@ body {
       .projectImg {
         width: 300px;
         height: 180px;
-        box-shadow: none;
         border-radius: 10px;
       }
       .projectButton {

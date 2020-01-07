@@ -1,10 +1,11 @@
 import React from 'react'
 import Projects from './project';
+import Skills from './skills';
 
 const Body = () => {
     return(
         <div className='bodyDiv'>
-            <h2>Check out some of my work!</h2>
+            <Skills />
             <Projects />
         </div>
     )
