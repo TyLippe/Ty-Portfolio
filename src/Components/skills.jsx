@@ -27,10 +27,10 @@ const Skills = () => {
                 <button onClick={() => filtered('software')}>Software Development</button>
                 <button onClick={() => filtered('com')}>Communication Software</button>
             </div>
-            <div className='skills'>
+            <div className='skillListDiv'>
                 {skills.map(skill => {
                     return(
-                        <li>{skill.name}</li>
+                        <ul className='skillList'>{skill.name}</ul>
                     )
                 })}
             </div>        
