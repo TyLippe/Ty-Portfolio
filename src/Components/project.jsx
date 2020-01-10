@@ -1,19 +1,10 @@
 import React from 'react'
-import Slider from 'infinite-react-carousel';
 import WaterMyPlants from '../Images/WaterMyPlants.PNG';
 import SplitTheBill from '../Images/SplitTheBill.PNG';
 import WanderLust from '../Images/Wanderlust.PNG';
 import Kansha from '../Images/Kansha.PNG';
 
 const Projects = () => {
-    const settings =  {
-        arrows: false,
-        dots: true,
-        duration: 100,
-        shift: 30,
-        autoplay: true,
-        autoplaySpeed: 4000,
-      };
 
     const WMPLink = e => {
         window.open('https://github.com/bw-water-plants')
@@ -50,10 +41,9 @@ const Projects = () => {
     return(
         <div className='projectDiv'>
             <h1>Portfolio</h1>
-            <Slider {...settings}>
+            <div className='projects'> 
             <div className='projectContainer'>
                 <h3>Water My Plants</h3>
-                <div className='imageHolder'>
                     <img src={WaterMyPlants} alt='Water My Plants' className='projectImg'/>
                     <div className='linkButtons'>
                     <button className='projectButton' onClick={WMPLink}>
@@ -62,12 +52,11 @@ const Projects = () => {
                     <button className='projectButton' onClick={WMPDeploy}>
                             Visit Water My Plants
                     </button>
-                    </div>
                 </div> 
             </div>
+
             <div className='projectContainer'>
                 <h3>Split The Bill</h3>
-                <div className='imageHolder'>
                     <img src={SplitTheBill} alt='Split The Bill' className='projectImg' />
                     <div className='linkButtons'>
                     <button className='projectButton' onClick={STBLink}>
@@ -76,12 +65,11 @@ const Projects = () => {
                     <button className='projectButton' onClick={STBDeploy}>
                             Visit Split The Bill
                     </button>
-                    </div>
                 </div>
             </div>
+
             <div className='projectContainer'>
                 <h3>WanderLust</h3>
-                <div className='imageHolder'>
                     <img src={WanderLust} alt='WanderLust' className='projectImg' />
                     <div className='linkButtons'>
                     <button className='projectButton' onClick={WLLink}>
@@ -90,12 +78,11 @@ const Projects = () => {
                     <button className='projectButton' onClick={WLDeploy}>
                             Visit Wanderlust
                     </button>
-                    </div>
                 </div>
             </div>
+
             <div className='projectContainer'>
                 <h3>Kansha</h3>
-                <div className='imageHolder'>
                     <img src={Kansha} alt='Kansha' className='projectImg' /> 
                     <div className='linkButtons'>             
                     <button className='projectButton' onClick={KLink}>
@@ -104,10 +91,9 @@ const Projects = () => {
                     <button className='projectButton' onClick={KDeploy}>
                             Visit Kansha
                     </button>
-                    </div>
                 </div>
             </div>
-            </Slider>
+            </div>
         </div>
     )
 }
