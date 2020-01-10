@@ -19,6 +19,7 @@ const Footer = () => {
     return(
         <div className='footerContainer'>
         <div className='footerDiv'>
+            <p>Ty Lippe</p>
             <button className='socialButton' onClick={TwitterLink}>
                 <TwitterIcon /> 
             </button>

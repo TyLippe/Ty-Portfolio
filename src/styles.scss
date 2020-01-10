@@ -76,9 +76,9 @@ body {
     background-color: $dark;
     padding: 10px;
       p {
-        font-size: 36px;
+        font-size: 42px;
         font-weight: bold;
-        margin: 24px;
+        margin: 5px;
       }
       button {
         margin: 0;
@@ -165,7 +165,7 @@ body {
         border-radius: 100%;
       }
       .headerContainer {
-        margin: 0;
+        margin-bottom: 40px;
           h1 {
             font-size: 48px;
             text-align: center;
@@ -192,9 +192,6 @@ body {
 
   .skillDiv {
     height: 600px;
-      .active {
-        background-color: red;
-      }
       .filter {
         display: flex;
         justify-content: center;
@@ -223,57 +220,81 @@ body {
         padding: 40px;
         justify-content: center;
         margin-top: 16px;
+          ul {
+              &:hover {
+                color: $dark;
+                cursor: default;
+              }
+          }
       }
   }
-
-  .projectContainer {
-    position: relative;
-      .projectImg {
-        width: 1080px;
-        height: 600px;
-      }
-      .linkButtons {
-        transition: .5s ease;
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+  .projectDiv {
+    .projects {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .projectContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 45%;
+      align-items: center;
+        h3 {
           &:hover {
-            opacity: 1;
+            cursor: default;
           }
-      }
-      .projectButton {
-        opacity: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        background-color: $blue;
-        border: 2px solid $white;
-        padding: 15px;
-        text-align: center;
-        font-size: 1rem;
-        border-radius: 10px;
-        color: $white;
-        width: 280px;
-        margin: 24px;
+        }
+        .projectImg {
+          width: 700px;
+          height: 400px;
+        }
+        .linkButtons {
+          transition: .5s ease;
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
             &:hover {
-            color: $black;
-            border: 2px solid $black;
-            opacity: 1;
-            cursor: pointer;
-          }
-      }
+              opacity: 1;
+            }
+        }
+        .projectButton {
+          opacity: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          background-color: $blue;
+          border: 2px solid $white;
+          padding: 15px;
+          text-align: center;
+          font-size: 1rem;
+          border-radius: 10px;
+          color: $white;
+          width: 280px;
+          margin: 24px;
+              &:hover {
+              color: $black;
+              border: 2px solid $black;
+              opacity: 1;
+              cursor: pointer;
+            }
+        }
+    }
   }
 
-  .imageHolder:hover .projectImg {
+  .projectContainer:hover .projectImg {
     opacity: 0.3;
   }
 
-  .imageHolder:hover .projectButton {
+  .projectContainer:hover .projectButton {
     opacity: 1;
   }
+
 }
 //MEDIUM 
 @media screen and (max-width: $break-med) {
@@ -288,42 +309,109 @@ body {
       }
   }
 
-  .projectContainer {
-    position: relative;
-      .projectImg {
-        width: 80%;
-        height: auto;
+  .skillDiv {
+    height: 600px;
+    margin-bottom: 180px;
+      .filter {
+        display: flex;
+        justify-content: center;
+          button {
+            margin: 5px;
+            background-color: $white; 
+            border: 2px $white solid;
+            color: $blue;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            width: 240px;
+              &:hover {
+                background-color: $blue;
+                color: $white;
+                border: 2px $white solid;
+                cursor: pointer;
+              }
+          }
       }
-      .projectButton {
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-        background-color: $blue;
-        border: 2px solid $white;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 1rem;
-        border-radius: 10px;
-        color: $white;
+      .skillListDiv {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px;
+        justify-content: center;
+        margin-top: 16px;
+          ul {
             &:hover {
-            color: $black;
-            border: 2px solid $black;
-            opacity: 1;
-            cursor: pointer;
+              color: $dark;
+              cursor: default;
+            }
           }
       }
   }
 
-  .imageHolder:hover .projectImg {
+  .projectDiv {
+    .projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+    .projectContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 45%;
+      align-items: center;
+        h3 {
+          &:hover {
+            cursor: default;
+          }
+        }
+        .projectImg {
+          width: 700px;
+          height: 400px;
+        }
+        .linkButtons {
+          transition: .5s ease;
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+            &:hover {
+              opacity: 1;
+            }
+        }
+        .projectButton {
+          opacity: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          background-color: $blue;
+          border: 2px solid $white;
+          padding: 15px;
+          text-align: center;
+          font-size: 1rem;
+          border-radius: 10px;
+          color: $white;
+          width: 280px;
+          margin: 24px;
+              &:hover {
+              color: $black;
+              border: 2px solid $black;
+              opacity: 1;
+              cursor: pointer;
+            }
+        }
+    }
+  }
+
+  .projectContainer:hover .projectImg {
     opacity: 0.3;
   }
 
-  .imageHolder:hover .projectButton {
+  .projectContainer:hover .projectButton {
     opacity: 1;
   }
 }
@@ -340,44 +428,96 @@ body {
       }
   }
 
-  .projectContainer {
-    position: relative;
-      .projectImg {
-        width: 300px;
-        height: 180px;
-        border-radius: 10px;
+  .skillDiv {
+    height: 600px;
+      .filter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+          button {
+            margin: 5px;
+            background-color: $white; 
+            border: 2px $white solid;
+            color: $blue;
+            padding: 8px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            width: 240px;
+            height: 60px;
+              &:hover {
+                background-color: $white;
+                color: $blue;
+                border: 2px $white solid;
+                cursor: pointer;
+              }
+          }
       }
-      .projectButton {
-        transition: .5s ease;
-        opacity: 0.8;
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-        background-color: $blue;
-        border: 2px solid $white;
-        padding: 6px 20px;
-        text-align: center;
-        font-size: 1rem;
-        border-radius: 10px;
-        color: $white;
-            &:hover {
-            color: $white;
-            border: 2px solid $white;
-            opacity: 1;
-            cursor: pointer;
+      .skillListDiv {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 10px;
+        height: 500px;
+        font-size: 18px;
+          ul {
+            margin: 1px;
+            padding: 3px;
+              &:hover {
+                color: $dark;
+                cursor: default;
+              }
           }
       }
   }
-
-  .imageHolder:hover .projectImg {
-    opacity: 1;
-  }
-
-  .imageHolder:hover .projectButton {
-    opacity: 0.8;
+  .projectDiv {
+    margin-top: 600px;
+    .projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+    .projectContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 45%;
+      align-items: center;
+        .projectImg {
+          width: 340px;
+          height: 220px;
+        }
+        .linkButtons {
+          transition: .5s ease;
+          position: initial;
+          top: 0%;
+          left: 0%;
+          transform: translate(0%, 0%);
+          -ms-transform: translate(0%, 0%);
+        }
+        .projectButton {
+          opacity: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          background-color: $blue;
+          border: 2px solid $white;
+          padding: 15px;
+          text-align: center;
+          font-size: 1rem;
+          border-radius: 10px;
+          color: $white;
+          width: 280px;
+          margin: 24px;
+        }
+    }
   }
 }
 
@@ -388,6 +528,10 @@ body {
   margin-top: 60px;
   padding: 12px;
   background-color: $blue;
+    p {
+      text-align: center;
+      font-size: 24px;
+    }
     .socialButton {
       margin: 12px;
       border: 2px solid $white;
