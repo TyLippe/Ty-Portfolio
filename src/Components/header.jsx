@@ -6,9 +6,9 @@ const Header = () => {
 
     const shylaHandle = e => {
         setCount(count + 1)
-        console.log(count)
         if(count === 4) {
             window.open('/shyla')
+            setCount(0)
         }
     }
 

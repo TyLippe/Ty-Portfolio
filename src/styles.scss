@@ -531,7 +531,7 @@ body {
   align-items: center;
   margin-top: 60px;
   padding: 12px;
-  background-color: $blue;
+  background-color: $dark;
     p {
       text-align: center;
       font-size: 24px;
@@ -542,12 +542,12 @@ body {
       padding: 10px;
       border-radius: 100%;
       color: $white;
-      background-color: transparent;
+      background-color: $blue;
         &:hover {
           cursor: pointer;
-          border: 2px solid $black;
-          color: $blue;
-          background-color: black;
+          border: 2px solid $white;
+          color: $dark;
+          background-color: $blue;
         }
     }
 }
