@@ -19,13 +19,13 @@ const Skills = () => {
         <div className='skillDiv'>
             <h1>Skills</h1>
             <div className='filter'>
-                <button onClick={() => setSkills(skillData)}>All</button>
-                <button onClick={() => filtered('language')}>Programming Languages</button>
-                <button onClick={() => filtered('library')}>Libraries and Frameworks</button>
-                <button onClick={() => filtered('db')}>Databases</button>
-                <button onClick={() => filtered('version')}>Version Control</button>
-                <button onClick={() => filtered('software')}>Software Development</button>
-                <button onClick={() => filtered('com')}>Communication Software</button>
+                <button className='allButton' onClick={() => setSkills(skillData)}>All</button>
+                <button className='langButton' onClick={() => filtered('language')}>Programming Languages</button>
+                <button className='libButton' onClick={() => filtered('library')}>Libraries and Frameworks</button>
+                <button className='dbButton' onClick={() => filtered('db')}>Databases</button>
+                <button className='verButton' onClick={() => filtered('version')}>Version Control</button>
+                <button className='swButton' onClick={() => filtered('software')}>Software Development</button>
+                <button className='comButton'onClick={() => filtered('com')}>Communication Software</button>
             </div>
             <div className='skillListDiv'>
                 {skills.map(skill => {
