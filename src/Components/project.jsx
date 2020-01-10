@@ -43,27 +43,14 @@ const Projects = () => {
             <h1>Portfolio</h1>
             <div className='projects'> 
             <div className='projectContainer'>
-                <h3>Water My Plants</h3>
-                    <img src={WaterMyPlants} alt='Water My Plants' className='projectImg'/>
-                    <div className='linkButtons'>
-                    <button className='projectButton' onClick={WMPLink}>
-                            View the code for Water My Plants
+                <h3>Kansha</h3>
+                    <img src={Kansha} alt='Kansha' className='projectImg' /> 
+                    <div className='linkButtons'>             
+                    <button className='projectButton' onClick={KLink}>
+                            View the code for Kansha
                     </button>
-                    <button className='projectButton' onClick={WMPDeploy}>
-                            Visit Water My Plants
-                    </button>
-                </div> 
-            </div>
-
-            <div className='projectContainer'>
-                <h3>Split The Bill</h3>
-                    <img src={SplitTheBill} alt='Split The Bill' className='projectImg' />
-                    <div className='linkButtons'>
-                    <button className='projectButton' onClick={STBLink}>
-                            View the code for Split The Bill
-                    </button>
-                    <button className='projectButton' onClick={STBDeploy}>
-                            Visit Split The Bill
+                    <button className='projectButton' onClick={KDeploy}>
+                            Visit Kansha
                     </button>
                 </div>
             </div>
@@ -82,16 +69,30 @@ const Projects = () => {
             </div>
 
             <div className='projectContainer'>
-                <h3>Kansha</h3>
-                    <img src={Kansha} alt='Kansha' className='projectImg' /> 
-                    <div className='linkButtons'>             
-                    <button className='projectButton' onClick={KLink}>
-                            View the code for Kansha
+                <h3>Split The Bill</h3>
+                    <img src={SplitTheBill} alt='Split The Bill' className='projectImg' />
+                    <div className='linkButtons'>
+                    <button className='projectButton' onClick={STBLink}>
+                            View the code for Split The Bill
                     </button>
-                    <button className='projectButton' onClick={KDeploy}>
-                            Visit Kansha
+                    <button className='projectButton' onClick={STBDeploy}>
+                            Visit Split The Bill
                     </button>
                 </div>
+            </div>
+
+
+            <div className='projectContainer'>
+                <h3>Water My Plants</h3>
+                    <img src={WaterMyPlants} alt='Water My Plants' className='projectImg'/>
+                    <div className='linkButtons'>
+                    <button className='projectButton' onClick={WMPLink}>
+                            View the code for Water My Plants
+                    </button>
+                    <button className='projectButton' onClick={WMPDeploy}>
+                            Visit Water My Plants
+                    </button>
+                </div> 
             </div>
             </div>
         </div>
