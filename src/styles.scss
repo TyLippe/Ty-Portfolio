@@ -119,9 +119,10 @@ body {
             margin: 0;
             font-size: 80px;
           }
-          h2 {
+          p {
             margin-top: 10px;
             font-size: 32px;
+            
           }
       }
     }
@@ -197,21 +198,40 @@ body {
         justify-content: center;
           button {
             margin: 5px;
-            background-color: $white; 
             border: 2px $white solid;
-            color: $blue;
             padding: 10px;
+            color: $black;
             text-align: center;
             font-size: 18px;
             font-weight: bold;
             border-radius: 10px;
             width: 240px;
               &:hover {
-                background-color: $blue;
-                color: $white;
+                text-decoration: underline;
                 border: 2px $white solid;
                 cursor: pointer;
               }
+          }
+          .allButton {
+            background-color: $white;
+          }
+          .langButton {
+            background-color: #FF9AA2;
+          }
+          .libButton {
+            background-color: #FFB7B2;
+          }
+          .dbButton {
+            background-color: #FFDAC1;
+          }
+          .verButton {
+            background-color: #E2F0CB;
+          }
+          .swButton {
+            background-color: #B5EAD7;
+          }
+          .comButton {
+            background-color: #C7CEEA;
           }
       }
       .skillListDiv {
@@ -222,7 +242,6 @@ body {
         margin-top: 16px;
           ul {
               &:hover {
-                color: $dark;
                 cursor: default;
               }
           }
@@ -313,27 +332,47 @@ body {
     height: 600px;
       .filter {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
           button {
             margin: 5px;
-            background-color: $white; 
             border: 2px $white solid;
             color: $blue;
-            padding: 10px;
+            padding: 8px;
             text-align: center;
             font-size: 18px;
             font-weight: bold;
             border-radius: 10px;
             width: 240px;
-            height: 66px;
-              &:hover {
-                background-color: $blue;
-                color: $white;
-                border: 2px $white solid;
-                cursor: pointer;
-              }
-          }
+            height: 60px;
+            &:hover {
+              text-decoration: underline;
+              border: 2px $white solid;
+              cursor: pointer;
+            }
+        }
+        .allButton {
+          background-color: $white;
+        }
+        .langButton {
+          background-color: #FF9AA2;
+        }
+        .libButton {
+          background-color: #FFB7B2;
+        }
+        .dbButton {
+          background-color: #FFDAC1;
+        }
+        .verButton {
+          background-color: #E2F0CB;
+        }
+        .swButton {
+          background-color: #B5EAD7;
+        }
+        .comButton {
+          background-color: #C7CEEA;
+        }
       }
       .skillListDiv {
         display: flex;
@@ -343,7 +382,6 @@ body {
         margin-top: 16px;
           ul {
             &:hover {
-              color: $dark;
               cursor: default;
             }
           }
@@ -441,7 +479,6 @@ body {
         justify-content: center;
           button {
             margin: 5px;
-            background-color: $white; 
             border: 2px $white solid;
             color: $blue;
             padding: 8px;
@@ -451,13 +488,33 @@ body {
             border-radius: 10px;
             width: 240px;
             height: 60px;
-              &:hover {
-                background-color: $white;
-                color: $blue;
-                border: 2px $white solid;
-                cursor: pointer;
-              }
-          }
+            &:hover {
+              text-decoration: underline;
+              border: 2px $white solid;
+              cursor: pointer;
+            }
+        }
+        .allButton {
+          background-color: $white;
+        }
+        .langButton {
+          background-color: #FF9AA2;
+        }
+        .libButton {
+          background-color: #FFB7B2;
+        }
+        .dbButton {
+          background-color: #FFDAC1;
+        }
+        .verButton {
+          background-color: #E2F0CB;
+        }
+        .swButton {
+          background-color: #B5EAD7;
+        }
+        .comButton {
+          background-color: #C7CEEA;
+        }
       }
       .skillListDiv {
         display: flex;
@@ -473,7 +530,6 @@ body {
             margin: 1px;
             padding: 3px;
               &:hover {
-                color: $dark;
                 cursor: default;
               }
           }
@@ -531,7 +587,7 @@ body {
   align-items: center;
   margin-top: 60px;
   padding: 12px;
-  background-color: $blue;
+  background-color: $dark;
     p {
       text-align: center;
       font-size: 24px;
@@ -542,12 +598,12 @@ body {
       padding: 10px;
       border-radius: 100%;
       color: $white;
-      background-color: transparent;
+      background-color: $blue;
         &:hover {
           cursor: pointer;
-          border: 2px solid $black;
-          color: $blue;
-          background-color: black;
+          border: 2px solid $white;
+          color: $dark;
+          background-color: $blue;
         }
     }
 }
