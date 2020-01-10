@@ -110,9 +110,9 @@ function Contact() {
     const [sent, setSent] = useState(false);
 	const [open, setOpen] = useState(false);
 	const [mail, setMail] = useState({
-		sender: '',
+		sender_email: '',
 		subject: '',
-        date: 'Sent on' + new Date(Date.now()).toLocaleString(),
+        date: 'Sent: ' + new Date(Date.now()).toLocaleString(),
 		message: '',
 	});
 
@@ -121,7 +121,7 @@ function Contact() {
 	};
 
 	const handleSubmit = e => {
-        if(mail.sender.length === 0) {
+        if(mail.sender_email.length === 0) {
             return alert('Please fill in Sender information')
         } else if (mail.subject.length === 0) {
             return alert('Please fill in Subject information')
@@ -129,7 +129,8 @@ function Contact() {
             return alert('Please fill in message information')
         } else {
             mailSend();
-		    setSent(true);
+			setSent(true);
+			setTimeout(function(){ handleClose() }, 2000)
         }
     };
 
@@ -140,7 +141,7 @@ function Contact() {
 	const handleClose = () => {
 		setOpen(false);
 		setMail({
-            sender: '',
+            sender_email: '',
             subject: '',
             date: 'Sent: ' + new Date(Date.now()).toLocaleString(),
             message: '',
@@ -188,9 +189,9 @@ function Contact() {
                             <div className={classes.topInput}>
 							<TextField
 								className={classes.textField}
-								name="sender"
+								name="sender_email"
 								onChange={handleChange}
-								placeholder="Sender"
+								placeholder="Your Email"
 								value={mail.sender}
 								InputProps={{
 									disableUnderline: true,
