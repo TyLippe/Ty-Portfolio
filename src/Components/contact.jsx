@@ -17,16 +17,22 @@ const useStyles = makeStyles(theme => ({
     paper: {
 		backgroundColor: '#3A4F64',
 		border: '2px solid #000',
+		borderRadius: '8px',
 		boxShadow: 'none',
         color: 'white',
-        padding: '10px',
+		padding: '10px',
+
 	},
     topInput: {
         display: 'flex',
-    },
+	},
+	formDiv: {
+		display: 'flex',
+		flexDirection: 'column'
+	},
     textField: {
         margin: '10px',
-		borderRadius: '10px',
+		borderRadius: '8px',
 		backgroundColor: 'white',
 		padding: '.5rem',
         position: 'relative',
@@ -176,7 +182,8 @@ function Contact() {
                         </button>
                         {!sent &&
                         <>
-						<div>
+						<div className={classes.formDiv}>
+							<MailOutlineIcon className={classes.icon} />
                             <FormControl>
                             <div className={classes.topInput}>
 							<TextField

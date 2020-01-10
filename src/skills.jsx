@@ -104,7 +104,7 @@ const skillData = [
         id: 20
     },
     {
-        name: 'Object Oriented Programming',
+        name: 'OOP',
         type: 'software',
         id: 21
     },
