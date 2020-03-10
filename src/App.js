@@ -9,7 +9,7 @@ import Shyla from './Components/shyla'
 function App() {
   return (
       <div className="App">
-        <Route exact path='/' component={NavBar} />
+        {/* <Route exact path='/' component={NavBar} /> */}
         <Route exact path='/' component={Header} />
         <Route exact path='/' component={Body} />
         <Route exact path='/' component={Footer} /> 

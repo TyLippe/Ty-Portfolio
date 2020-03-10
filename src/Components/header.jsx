@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ProfilePic from '../Images/Ty.png'
+import ProfilePic from '../Images/Ty.jpg'
 
 const Header = () => {
     const [count, setCount] = useState(0)
