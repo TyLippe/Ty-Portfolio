@@ -17,7 +17,7 @@ const Skills = () => {
 
     return(
         <div className='skillDiv'>
-            <h1>Skills</h1>
+            <h1>My Skills</h1>
             <div className='skillContainer'>
             <div className='filter'>
                 <button className='skillButton' onClick={() => setSkills(skillData)}>All</button>
