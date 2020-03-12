@@ -2,104 +2,104 @@
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, rgba(9,29,74,1) 0%, rgba(17,17,117,1) 100%);
+  background-color: $primary;
   color: $font;
   font-family: Roboto, sans-serif;
   overflow-x: hidden;
 }
 
-  //LARGE
-  @media screen and (min-width: $break-large) {
-  .navBarDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    // background-image: url(./Images/Orlando-Skyline.jpg);
-    // background-repeat: no-repeat; 
-    // background-size: cover; 
-      p {
-        font-size: 36px;
-        font-weight: bold;
-        margin-left: 48px;
-      }
-      button {
-        margin-right: 48px;
-        background-color: transparent; 
-        border: none;
-        color: $font;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 36px;
-        font-weight: bold;
-        border-radius: 10px;
-          &:hover {
-            color: $secondary;
-            cursor: pointer;
-          }
-        }
-      }
-  }
-  //MEDIUM
-  @media screen and (max-width: $break-med) {
-  .navBarDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $primary;
-      p {
-        font-size: 36px;
-        font-weight: bold;
-        margin-left: 48px;
-      }
-      button {
-        margin-right: 48px;
-        background-color: transparent; 
-        border: none;
-        color: $font;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 36px;
-        font-weight: bold;
-        border-radius: 10px;
-          &:hover {
-            color: $secondary;
-            cursor: pointer;
-          }
-        }
-      }
-  }
-  //SMALL
-  @media screen and (max-width: $break-small) {
-  .navBarDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $primary;
-    padding: 10px;
-      p {
-        font-size: 42px;
-        font-weight: bold;
-        margin: 5px;
-      }
-      button {
-        margin: 0;
-        background-color: transparent; 
-        border: none;
-        color: $font;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 36px;
-        font-weight: bold;
-        border-radius: 10px;
-          &:hover {
-            color: $secondary;
-            cursor: pointer;
-          }
-        }
-      }
-  }
+  // //LARGE
+  // @media screen and (min-width: $break-large) {
+  // .navBarDiv {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   // background-image: url(./Images/Orlando-Skyline.jpg);
+  //   // background-repeat: no-repeat; 
+  //   // background-size: cover; 
+  //     p {
+  //       font-size: 36px;
+  //       font-weight: bold;
+  //       margin-left: 48px;
+  //     }
+  //     button {
+  //       margin-right: 48px;
+  //       background-color: transparent; 
+  //       border: none;
+  //       color: $font;
+  //       padding: 15px 32px;
+  //       text-align: center;
+  //       font-size: 36px;
+  //       font-weight: bold;
+  //       border-radius: 10px;
+  //         &:hover {
+  //           color: $secondary;
+  //           cursor: pointer;
+  //         }
+  //       }
+  //     }
+  // }
+  // //MEDIUM
+  // @media screen and (max-width: $break-med) {
+  // .navBarDiv {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   background-color: $primary;
+  //     p {
+  //       font-size: 36px;
+  //       font-weight: bold;
+  //       margin-left: 48px;
+  //     }
+  //     button {
+  //       margin-right: 48px;
+  //       background-color: transparent; 
+  //       border: none;
+  //       color: $font;
+  //       padding: 15px 32px;
+  //       text-align: center;
+  //       font-size: 36px;
+  //       font-weight: bold;
+  //       border-radius: 10px;
+  //         &:hover {
+  //           color: $secondary;
+  //           cursor: pointer;
+  //         }
+  //       }
+  //     }
+  // }
+  // //SMALL
+  // @media screen and (max-width: $break-small) {
+  // .navBarDiv {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   background-color: $primary;
+  //   padding: 10px;
+  //     p {
+  //       font-size: 42px;
+  //       font-weight: bold;
+  //       margin: 5px;
+  //     }
+  //     button {
+  //       margin: 0;
+  //       background-color: transparent; 
+  //       border: none;
+  //       color: $font;
+  //       padding: 15px 32px;
+  //       text-align: center;
+  //       font-size: 36px;
+  //       font-weight: bold;
+  //       border-radius: 10px;
+  //         &:hover {
+  //           color: $secondary;
+  //           cursor: pointer;
+  //         }
+  //       }
+  //     }
+  // }
 
 /* ----------------------------------------------
  * Generated by Animista on 2020-3-10 16:46:24
@@ -113,27 +113,31 @@ body {
  * animation flip-horizontal-bottom
  * ----------------------------------------
  */
- @keyframes slide-in-top {
-  0% {
-    -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
+ // ANIMATIONS
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  //HEADER
   //LARGE
   @media screen and (min-width: $break-large) {
   .headerDiv {
@@ -175,14 +179,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 24px;
+    margin: 30px;
       img {
         width: 60%;
         height: auto;
         border-radius: 100%;
+        animation: 1s ease-out 0s 1 slide-in-top;
+        box-shadow: 1px 3px 15px rgba(0,0,0,0.8);
       }
       .headerContainer {
         margin: 0;
+        animation: 1s ease-out 0s 1 fade-in;
+        margin-bottom: 36px;
           h1 {
             font-size: 48px;
             text-align: center;
@@ -219,18 +227,17 @@ body {
     }
   }
 
+  //BODY
   //LARGE 
   @media screen and (min-width: $break-large) {
   .bodyDiv {
     text-align: center;
-    // background-color: $secondary;
     color: $font;
-    font-size: 30px;
+    font-size: 1.6rem;
       h2 {
         margin: 12px;
       }
   }
-
   .topbodyContainer{
     display: flex;
     flex-direction: row;
@@ -238,7 +245,6 @@ body {
     width: 100%;
     padding: 10px;
   }
-
   .aboutDiv{
     padding: 0px 10px;
     width: 48%;
@@ -249,11 +255,10 @@ body {
     }
     p {
       text-align: left;
-      font-size: 24px;
+      font-size: 1.3rem;
       line-height: 1.4;
     }
   }
-
   .skillDiv {
     padding: 0px 10px;
     width: 48%;
@@ -303,7 +308,7 @@ body {
         margin-top: 6px;
         margin-left: 30px;
           li {
-            font-size: 24px;
+            font-size: 1.3rem;
             margin: 4px;
             padding: 0;
             list-style-type: circle;
@@ -335,18 +340,24 @@ body {
         h3 {
           position: absolute;
           -webkit-text-stroke: 2px black;
-          top: 25%;
-          font-size: 60px;
+          top: 20%;
+          font-size: 250%;
           color: rgba(255, 255, 255, 0.9);
           &:hover {
             cursor: default;
           }
         }
         .projectImg {
-          height: 400px;
-          width: 750px;
+          width: 100%;
+          height: auto;
           opacity: 0.3;
           border-radius: 10px;
+          border: 2px $white solid;
+        }
+        .projDesc {
+          position: absolute;
+          top: 0;
+          opacity: 0;
         }
         .linkButtons {
           display: flex;
@@ -360,6 +371,7 @@ body {
           transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
             &:hover {
+              transition: opacity .2s linear;
               opacity: 1;
             }
         }
@@ -382,31 +394,47 @@ body {
   }
 
   .projectContainer:hover .projectImg {
+    transition: opacity .2s linear;
     opacity: 1;
   }
 
   .projectContainer:hover .projectButton {
+    transition: opacity .2s linear;
     opacity: 1;
   }
 
   .projectContainer:hover h3 {
+    transition: opacity .2s linear;
     opacity: 0;
   }
 
 }
+
 //MEDIUM 
 @media screen and (max-width: $break-med) {
   .bodyDiv {
-    padding: 12px 24px;
     text-align: center;
-    background-color: $secondary;
     color: $font;
-    font-size: 30px;
+    font-size: 1.6rem;
       h2 {
         margin: 12px;
       }
   }
+  .topbodyContainer{
+    background-color: $secondary;
 
+  }
+  .aboutDiv{
+    padding: 10px 10px;
+      &:hover {
+        color: $white;
+    }
+    p {
+      text-align: center;
+      font-size: 1.3rem;
+      line-height: 1.4;
+    }
+  }
   .skillDiv {
     height: 600px;
       .filter {
@@ -434,41 +462,29 @@ body {
         .allButton {
           background-color: $white;
         }
-        .langButton {
-          background-color: #FF9AA2;
-        }
-        .libButton {
-          background-color: #FFB7B2;
-        }
-        .dbButton {
-          background-color: #FFDAC1;
-        }
-        .verButton {
-          background-color: #E2F0CB;
-        }
-        .swButton {
-          background-color: #B5EAD7;
-        }
-        .comButton {
-          background-color: #C7CEEA;
-        }
       }
       .skillListDiv {
         display: flex;
+        height: 260px;
+        flex-direction: column;
+        align-items: flex-start;
         flex-wrap: wrap;
-        padding: 40px;
-        justify-content: center;
-        margin-top: 16px;
-          ul {
+        margin-top: 20px;
+        margin-left: 30px;
+        li {
+          font-size: 1.3rem;
+          padding: 0;
+          margin-left: 10px;
+          list-style-type: circle;
             &:hover {
               cursor: default;
             }
-          }
+        }
       }
   }
 
   .projectDiv {
-    margin-top: 600px;
+    margin-top: 0;
     .projects {
       display: flex;
       flex-direction: column;
@@ -539,83 +555,48 @@ body {
 //SMALL 
 @media screen and (max-width: $break-small) {
   .bodyDiv {
-    padding: 12px 24px;
     text-align: center;
-    background-color: $secondary;
     color: $font;
     font-size: 30px;
       h2 {
         margin: 12px;
       }
   }
+  .topbodyContainer{
+    background-color: $secondary;
 
+  }
+  .aboutDiv{
+    padding: 10px 10px;
+      &:hover {
+        color: $white;
+    }
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+  }
   .skillDiv {
-    height: 600px;
+    height: 500px;
       .filter {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-          button {
-            margin: 5px;
-            border: 2px $white solid;
-            color: $secondary;
-            padding: 8px;
-            text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 10px;
-            width: 240px;
-            height: 60px;
-            &:hover {
-              text-decoration: underline;
-              border: 2px $white solid;
-              cursor: pointer;
-            }
-        }
-        .allButton {
-          background-color: $white;
-        }
-        .langButton {
-          background-color: #FF9AA2;
-        }
-        .libButton {
-          background-color: #FFB7B2;
-        }
-        .dbButton {
-          background-color: #FFDAC1;
-        }
-        .verButton {
-          background-color: #E2F0CB;
-        }
-        .swButton {
-          background-color: #B5EAD7;
-        }
-        .comButton {
-          background-color: #C7CEEA;
-        }
+        display: none;
       }
       .skillListDiv {
         display: flex;
+        height: 300px;
         flex-direction: column;
-        flex-wrap: wrap;
-        padding: 10px;
-        justify-content: flex-start;
         align-items: flex-start;
-        margin-top: 10px;
-        height: 500px;
-        font-size: 18px;
-          ul {
-            margin: 1px;
-            padding: 3px;
-              &:hover {
-                cursor: default;
-              }
-          }
+        margin-top: 20px;
+        li {
+          font-size: 1.2rem;
+          padding: 0;
+          list-style-type: circle;
+        }
       }
   }
   .projectDiv {
-    margin-top: 600px;
+    margin-top: 0;
     .projects {
       display: flex;
       flex-direction: column;

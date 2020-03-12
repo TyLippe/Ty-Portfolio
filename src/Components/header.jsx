@@ -1,17 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ProfilePic from '../Images/Ty.jpg'
 
 const Header = () => {
-    const [count, setCount] = useState(0)
-
-    const shylaHandle = e => {
-        setCount(count + 1)
-        if(count === 4) {
-            window.open('/shyla')
-            setCount(0)
-        }
-    }
-
     return(
         <div className='headerDiv'>
             <img src={ProfilePic} alt="Ty Lippe's Avatar" id='click' />

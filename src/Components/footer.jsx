@@ -21,7 +21,6 @@ const Footer = () => {
         <div className='footerDiv'>
             <p>Ty Lippe</p>
             <p>tylippe94@gmail.com</p>
-            <p>(321) 830-8790</p>
             <button className='socialButton' onClick={TwitterLink}>
                 <TwitterIcon /> 
             </button>
