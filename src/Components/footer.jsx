@@ -20,6 +20,7 @@ const Footer = () => {
         <div className='footerContainer'>
         <div className='footerDiv'>
             <p>Ty Lippe</p>
+            <p>tylippe94@gmail.com</p>
             <button className='socialButton' onClick={TwitterLink}>
                 <TwitterIcon /> 
             </button>

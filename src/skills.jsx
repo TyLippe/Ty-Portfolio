@@ -109,11 +109,6 @@ const skillData = [
         id: 21
     },
     {
-        name: 'Pair Programming',
-        type: 'software',
-        id: 22
-    },
-    {
         name: 'Slack',
         type: 'com',
         id: 23

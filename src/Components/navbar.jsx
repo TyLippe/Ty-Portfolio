@@ -6,7 +6,7 @@ const NavBar = () => {
     return(
         <div className='navBarDiv'>
             <p>Ty Lippe</p>
-            <Contact />
+            {/* <Contact /> */}
         </div>
     )
 }

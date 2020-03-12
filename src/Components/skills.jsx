@@ -17,23 +17,25 @@ const Skills = () => {
 
     return(
         <div className='skillDiv'>
-            <h1>Skills</h1>
+            <h1>My Skills</h1>
+            <div className='skillContainer'>
             <div className='filter'>
-                <button className='allButton' onClick={() => setSkills(skillData)}>All</button>
-                <button className='langButton' onClick={() => filtered('language')}>Programming Languages</button>
-                <button className='libButton' onClick={() => filtered('library')}>Libraries and Frameworks</button>
-                <button className='dbButton' onClick={() => filtered('db')}>Databases</button>
-                <button className='verButton' onClick={() => filtered('version')}>Version Control</button>
-                <button className='swButton' onClick={() => filtered('software')}>Software Development</button>
-                <button className='comButton'onClick={() => filtered('com')}>Communication Software</button>
+                <button className='skillButton' onClick={() => setSkills(skillData)}>All</button>
+                <button className='skillButton' onClick={() => filtered('language')}>Programming Languages</button>
+                <button className='skillButton' onClick={() => filtered('library')}>Libraries and Frameworks</button>
+                <button className='skillButton' onClick={() => filtered('db')}>Databases</button>
+                <button className='skillButton' onClick={() => filtered('version')}>Version Control</button>
+                <button className='skillButton' onClick={() => filtered('software')}>Software Development</button>
+                <button className='skillButton'onClick={() => filtered('com')}>Communication Software</button>
             </div>
             <div className='skillListDiv'>
                 {skills.map(skill => {
                     return(
-                        <ul className='skillList'>{skill.name}</ul>
+                        <li className='skillList'>{skill.name}</li>
                     )
                 })}
-            </div>        
+            </div>   
+            </div>     
         </div>
     )
 }
